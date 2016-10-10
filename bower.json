@@ -1,0 +1,24 @@
+{
+  "name": "eureka-flexbox",
+  "description": "Flexbox as CSS classes with media breakpoints",
+  "main": "src/eureka-flexbox.less",
+  "authors": [
+    "Manuel Rodríguez"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flex",
+    "flexbox"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/manyrdz/eureka-flexbox.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

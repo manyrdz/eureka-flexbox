@@ -1,0 +1,24 @@
+{
+  "name": "eureka-flexbox",
+  "version": "1.0.0",
+  "description": "Flexbox as CSS classes with media breakpoints",
+  "authors": [
+    "Manuel Rodríguez"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/manyrdz/eureka-flexbox.git"
+  },
+  "main": "src/eureka-flexbox.less",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

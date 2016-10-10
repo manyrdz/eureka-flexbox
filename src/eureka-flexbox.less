@@ -1,0 +1,74 @@
+// Eureka-Flex
+@01: xs-;
+@02: sm-;
+@03: md-;
+@04: lg-;
+
+@xs-breakpoint: 480px;
+@sm-breakpoint: 768px;
+@md-breakpoint: 992px;
+@lg-breakpoint: 1200px;
+
+.magic(@class, @ruleset) {
+  &.@{class} {
+    @ruleset();
+  }
+  .mixin(@xx) {
+    &.@{xx}@{class} {
+      @media (min-width: ~"@{@{xx}breakpoint}") {
+        & {
+          @ruleset();
+        }
+      }
+    }
+  }
+  .mixin(@01);
+  .mixin(@02);
+  .mixin(@03);
+  .mixin(@04);
+}
+
+.flex {
+  display: flex;
+  .block(@xx) {
+    &.@{xx}block {
+      @media (min-width: ~"@{@{xx}breakpoint}") {
+        display: flex;
+      }
+    }
+  }
+  .block(@01);
+  .block(@02);
+  .block(@03);
+  .block(@04);
+
+  .magic(inline,                    { flex-display: inline-flex;       } );
+  .magic(direction-row,             { flex-direction: row;             } );
+  .magic(direction-row-reverse,     { flex-direction: row-reverse;     } );
+  .magic(direction-column,          { flex-direction: column;          } );
+  .magic(direction-column-reverse,  { flex-direction: column-reverse;  } );
+  .magic(nowrap,                    { flex-wrap: nowrap;               } );
+  .magic(wrap,                      { flex-wrap: wrap;                 } );
+  .magic(wrap-reverse,              { flex-wrap: wrap-reverse;         } );
+  .magic(justify-start,             { justify-content: flex-start;     } );
+  .magic(justify-end,               { justify-content: flex-end;       } );
+  .magic(justify-center,            { justify-content: center;         } );
+  .magic(justify-between,           { justify-content: space-between;  } );
+  .magic(justify-around,            { justify-content: space-around;   } );
+  .magic(items-start,               { align-items: flex-start;         } );
+  .magic(items-end,                 { align-items: flex-end;           } );
+  .magic(items-stretch,             { align-items: stretch;            } );
+  .magic(items-center,              { align-items: center;             } );
+  .magic(items-baseline,            { align-items: baseline;           } );
+  .magic(content-start,             { align-content: flex-start;       } );
+  .magic(content-end,               { align-content: flex-end;         } );
+  .magic(content-stretch,           { align-content: stretch;          } );
+  .magic(content-center,            { align-content: center;           } );
+  .magic(content-between,           { align-content: space-between;    } );
+  .magic(content-around,            { align-content: space-around;     } );
+  .magic(self-start,                { align-self: flex-start;          } );
+  .magic(self-end,                  { align-self: flex-end;            } );
+  .magic(self-stretch,              { align-self: stretch;             } );
+  .magic(self-center,               { align-self: center;              } );
+  .magic(self-baseline,             { align-self: baseline;            } );
+}
