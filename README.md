@@ -62,7 +62,7 @@ The available classes with their rulesets are:
 ```
 **NOTE:** `block` is used only with a breakpoint prefix and does not exists as a standalone class because `flex` already applies the same ruleset.
 
-Naturally, to use any of the available classes, the `flex` class **MUST** be present in the element because it applies the `flex` display
+Naturally, to use any of the available classes, the `flex` class **MUST** be present in the element because it applies the `flex` display. Also `flex` never uses breakpoints prefixes.
 
 ## Customization
 
