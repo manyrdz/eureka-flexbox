@@ -1,20 +1,20 @@
-# Eureka-Flexbox 
----
+# Eureka-Flexbox
+
 Flexbox as CSS classes with media query breakpoints. A library for flexbox users.
 
 ## Table of contents
----
+
 - Installation
 - Media Breakpoints
 - Classes and Rulesets
 - Customization
 
 ## Installation
----
+
 - Install with [Bower](https://bower.io/): `bower install eureka-flexbox --save`
 
 ## Media Breakpoints
----
+
 Eureka-Flexbox uses a mobile-first approach so its media queries use min-width instead of max-width. There is support for four media breakpoints and, just like any other css library, by prefixing the classname with the desired breakpoint and a hyphen the work is done. Available media breakpoints are:
 
  - Extra Small (xs: 480px)
@@ -23,7 +23,7 @@ Eureka-Flexbox uses a mobile-first approach so its media queries use min-width i
  - Large (lg: 1200px)
 
 ## Classes and Rulesets
----
+
 The library keeps things simple: ---One class translates to one property---
 
 The available classes with their rulesets are:
@@ -65,7 +65,7 @@ The available classes with their rulesets are:
 Naturally, to use any of the available classes, the `flex` class **MUST** be present in the element because it applies the `flex` display
 
 ## Customization
----
+
 Eureka-Flexbox is written in LESS. The code itself is perfectly aligned to facilitate the text modification.
 
 The media breakpoint declarations are as follows:
