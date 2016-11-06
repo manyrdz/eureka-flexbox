@@ -10,7 +10,11 @@ gulp.task("build", () => {
     gulp.src("src/eureka-flexbox.less")
     .pipe(less())
     .pipe(autoprefixer({
-      browsers: ["last 2 versions"]
+      browsers: [
+        "Explorer >= 10",
+        "Firefox >= 21",
+        "Safari >= 8"
+      ]
     }))
     .pipe(gcmq())
     .pipe(rename("eureka-flexbox.css"))
