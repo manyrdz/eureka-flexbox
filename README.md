@@ -12,6 +12,7 @@ Flexbox as CSS classes with media query breakpoints. A library for flexbox users
 ## Installation
 
 - Install with [Bower](https://bower.io/): `bower install eureka-flexbox --save`
+- Install with [Npm](https://npmjs.com/): `npm install eureka-flexbox --save`
 
 ## Media Breakpoints
 
