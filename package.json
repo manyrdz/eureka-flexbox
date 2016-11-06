@@ -10,6 +10,11 @@
     "type": "git",
     "url": "git://github.com/manyrdz/eureka-flexbox.git"
   },
+  "keywords": [
+    "css",
+    "less",
+    "flexbox"
+  ],
   "main": "src/eureka-flexbox.less",
   "scripts": {
     "build": "gulp build"
