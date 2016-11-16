@@ -72,11 +72,11 @@ Naturally, to use any of the available classes, the `flex` class **MUST** be pre
 <div class="flex wrap justify-center xs-justify-start sm-justify-end md-justify-between lg-justify-around"></div>
 ```
 The previous `div` element will display as a flex container, will wrap its child elements, and:
-1. Initially, will arrange its children to be placed at the center of the container (self)
-2. When 480px width (xs) is reached, the children will be placed at the start of the container
-3. When 768px width (sm) is reached, the children will be placed at the end of the container
-4. When 992px width (md) is reached, the children will be placed to occupy the whole available container space (without changing their widths)
-5. When 1200px width (lg) is reached, the children will be distributed equally within the available container space (without changing their widths)
+- Initially, will arrange its children to be placed at the center of the container (self)
+- When 480px width (xs) is reached, the children will be placed at the start of the container
+- When 768px width (sm) is reached, the children will be placed at the end of the container
+- When 992px width (md) is reached, the children will be placed to occupy the whole available container space (without changing their widths)
+- When 1200px width (lg) is reached, the children will be distributed equally within the available container space (without changing their widths)
 
 ## Customization
 
