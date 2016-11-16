@@ -7,6 +7,7 @@ Flexbox as CSS classes with media query breakpoints. A library for flexbox users
 - Installation
 - Media Breakpoints
 - Classes and Rulesets
+- Example
 - Customization
 
 ## Installation
@@ -64,6 +65,18 @@ The available classes with their rulesets are:
 **NOTE:** `block` is used only with a breakpoint prefix and does not exists as a standalone class because `flex` already applies the same ruleset.
 
 Naturally, to use any of the available classes, the `flex` class **MUST** be present in the element because it applies the `flex` display. Also `flex` never uses breakpoints prefixes.
+
+## Example
+
+```
+<div class="flex wrap justify-center xs-justify-start sm-justify-end md-justify-between lg-justify-around"></div>
+```
+The previous `div` element will display as a flex container, will wrap its child elements, and:
+1. Initially, will arrange its children to be placed at the center of the container (self)
+2. When 480px width (xs) is reached, the children will be placed at the start of the container
+3. When 768px width (sm) is reached, the children will be placed at the end of the container
+4. When 992px width (md) is reached, the children will be placed to occupy the whole available container space (without changing their widths)
+5. When 1200px width (lg) is reached, the children will be distributed equally within the available container space (without changing their widths)
 
 ## Customization
 
